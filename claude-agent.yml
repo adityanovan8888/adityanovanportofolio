@@ -1,1 +1,13 @@
+name: Run Claude AI Agent
+on: [push, pull_request]
+
+jobs:
+  ai-review:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Claude Code Action Official
+        uses: anthropics/claude-code-action@v1
 
