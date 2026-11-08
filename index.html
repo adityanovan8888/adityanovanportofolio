@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Educator & IT Portfolio</title>
+    <!-- Menggunakan Google Fonts: Inter untuk tampilan modern -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="light-mode"> <!-- Default ke Light Mode -->
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <!-- Logo / Inisial -->
+            <a href="#" class="logo">
+                <span class="logo-icon">N</span>
+                <span class="logo-text">Aditya Novan, S. Kom</span>
+            </a>
+
+            <!-- Menu Navigasi -->
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#teaching">Teaching</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <!-- Fitur Kanan (Dark Mode & CTA) -->
+            <div class="nav-actions">
+                <!-- Tombol Toggle Dark/Light Mode -->
+                <button id="theme-toggle" class="theme-btn" aria-label="Toggle Theme">
+                    <svg id="icon-moon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+                    <svg id="icon-sun" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="hidden"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+                </button>
+                <!-- Tombol CTA -->
+                <a href="#contact" class="btn-primary">Work With Me</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            
+            <!-- Kolom Kiri: Teks -->
+            <div class="hero-content">
+                <!-- Badge Kecil -->
+                <div class="badge">
+                    <span class="dot"></span> Educator • IT Enthusiast • Innovator
+                </div>
+
+                <!-- Judul Utama -->
+                <h1 class="hero-title">
+                    Bridging Education.<br>
+                    Teaching IT Skills.<br>
+                    <span class="highlight">Empowering Future Innovators.</span>
+                </h1>
+
+                <!-- Deskripsi -->
+                <p class="hero-desc">
+                    I am a Vocational High School (SMK) Teacher with a strong IT background. I help students master technology, software development, and digital innovation through practical learning and real-world projects.
+                </p>
+
+                <!-- List Pencapaian Singkat -->
+                <div class="hero-stats">
+                    <span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> SMK Educator</span>
+                    <span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> IT Developer</span>
+                    <span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Digital Innovator</span>
+                </div>
+
+                <!-- Tombol Aksi -->
+                <div class="hero-actions">
+                    <a href="#contact" class="btn-primary">Explore My Portfolio</a>
+                    <a href="#" class="btn-secondary">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                        Download CV
+                    </a>
+                </div>
+            </div>
+
+            <!-- Kolom Kanan: Foto Profil -->
+            <div class="hero-image-wrapper">
+                <!-- Container Foto dengan efek border/glow -->
+                <div class="image-container">
+                    <!-- GANTI 'profil.jpg' DENGAN NAMA FILE FOTO ANDA -->
+                    <img src="assets/img/profile.jpeg" alt="Profile Photo" class="profile-photo">              
+                             
+                 </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
