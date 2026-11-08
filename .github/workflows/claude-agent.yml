@@ -1,19 +1,17 @@
-name: Run Claude AI Agent
+name: DeepSeek Code Review
+
 on:
-  pull_request:
-    types: [opened, synchronize]
-  issue_comment:
-    types: [created]
+  push:
+    branches: [ "main" ]
 
 jobs:
-  ai-review:
+  review:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Code
         uses: actions/checkout@v4
 
-      - name: Claude Code Action Official
-        uses: anthropics/claude-code-action@v1
-        env:
-          CLAUDE_API_KEY: ${{ secrets.ANTHROPICS_API_KEY }}
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: DeepSeek Code Review
+        uses: deepseek-actions/code-review@v1
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
